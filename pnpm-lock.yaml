@@ -1,0 +1,130 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+devDependencies:
+  shift-ast:
+    specifier: ^7.0.0
+    version: 7.0.0
+  shift-codegen:
+    specifier: ^8.1.0
+    version: 8.1.0
+  shift-fuzzer:
+    specifier: ^3.0.0
+    version: 3.0.0
+  shift-parser:
+    specifier: ^8.0.0
+    version: 8.0.0
+  shift-shrink:
+    specifier: ^2.0.0
+    version: 2.0.0
+
+packages:
+
+  /esutils@2.0.2:
+    resolution: {integrity: sha512-UUPPULqkyAV+M3Shodis7l8D+IyX6V8SbaBnTb449jf3fMTd8+UOZI1Q70NbZVOQkcR91yYgdHsJiMMMVmYshg==}
+    engines: {node: '>=0.10.0'}
+    dev: true
+
+  /esutils@2.0.3:
+    resolution: {integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==}
+    engines: {node: '>=0.10.0'}
+    dev: true
+
+  /multimap@1.1.0:
+    resolution: {integrity: sha512-0ZIR9PasPxGXmRsEF8jsDzndzHDj7tIav+JUmvIFB/WHswliFnquxECT/De7GR4yg99ky/NlRKJT82G1y271bw==}
+    dev: true
+
+  /object-assign@4.1.1:
+    resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
+    engines: {node: '>=0.10.0'}
+    dev: true
+
+  /shift-ast@7.0.0:
+    resolution: {integrity: sha512-O0INwsZa1XH/lMSf52udGnjNOxKBLxFiZHt0Ys3i6bqtwuGEA3eDR4+e0qJELIsCy8+BiTtlTgQzP76K1ehipQ==}
+    dev: true
+
+  /shift-codegen@8.1.0:
+    resolution: {integrity: sha512-hV48SiFM0pgTLCueh0iwqbvqElXPtZL69nb+3eXOU3iZZnLP+AlBQSLKKvHSPr/Onmk0lcUEkAM7RA6V6Wj1GQ==}
+    dependencies:
+      esutils: 2.0.3
+      object-assign: 4.1.1
+      shift-reducer: 7.0.0
+    dev: true
+
+  /shift-fuzzer@3.0.0:
+    resolution: {integrity: sha512-oHGhMVP1Ldm4048QaEsGJixOCmrEUy5s3N2IVEEhIizfBN8acCPc1lZvS9lAdUeH3B30JDkyxrJUVs5XL0uKpA==}
+    dependencies:
+      shift-ast: 7.0.0
+    dev: true
+
+  /shift-parser@8.0.0:
+    resolution: {integrity: sha512-IShW1wGhvA5e+SPNVQ+Dwi/Be6651F2jZc6wwYHbYW7PiswAYfvR/v3Q+CjjxsVCna5L6J5OtR6y+tkkCzvCfw==}
+    dependencies:
+      multimap: 1.1.0
+      shift-ast: 7.0.0
+      shift-reducer: 7.0.0
+      shift-regexp-acceptor: 3.0.0
+    dev: true
+
+  /shift-reducer@7.0.0:
+    resolution: {integrity: sha512-9igIDMHzp1+CkQZITGHM1sAd9jqMPV0vhqHuh8jlYumHSMIwsYcrDeo1tlpzNRUnfbEq1nLyh8Bf1YU8HGUE7g==}
+    dependencies:
+      shift-ast: 7.0.0
+    dev: true
+
+  /shift-regexp-acceptor@3.0.0:
+    resolution: {integrity: sha512-98UKizBjHY6SjjLUr51YYw4rtR+vxjGFm8znqNsoahesAI8Y9+WVAyiBCxxkov1KSDhW0Wz8FwwUqHnlFnjdUg==}
+    dependencies:
+      unicode-match-property-ecmascript: 1.0.4
+      unicode-match-property-value-ecmascript: 1.0.2
+      unicode-property-aliases-ecmascript: 1.0.4
+    dev: true
+
+  /shift-shrink@2.0.0:
+    resolution: {integrity: sha512-LNaafUyzSyZaQxphrGdJlMbo8BUwsfwznCMURtNTt7PTBOrrnMbPIT4AP7wwZm6Dpe9fs/7GfWQ0kwXrlE5yEw==}
+    dependencies:
+      shift-ast: 7.0.0
+      shift-parser: 8.0.0
+      shift-reducer: 7.0.0
+      shift-spec: 2019.0.0
+      shift-validator: 6.0.0
+    dev: true
+
+  /shift-spec@2019.0.0:
+    resolution: {integrity: sha512-vYfKl+afWPUj/wfr5T/+mdYvWx0nn8LY6hVdfZmFENdGEBpAfQyOTo4/5i+rs8mj+Jz4+0MnsP4vXagjEoHfEw==}
+    dev: true
+
+  /shift-validator@6.0.0:
+    resolution: {integrity: sha512-U4/O9yOCPSZaUIe7uAvzOwG+bQepLBNZyt7tISdweYXXUVhQLEg+maLxP8YamcuRUzFepyWw6S/C4lXFiv2U7Q==}
+    dependencies:
+      esutils: 2.0.2
+      shift-parser: 8.0.0
+      shift-reducer: 7.0.0
+      shift-regexp-acceptor: 3.0.0
+    dev: true
+
+  /unicode-canonical-property-names-ecmascript@1.0.4:
+    resolution: {integrity: sha512-jDrNnXWHd4oHiTZnx/ZG7gtUTVp+gCcTTKr8L0HjlwphROEW3+Him+IpvC+xcJEFegapiMZyZe02CyuOnRmbnQ==}
+    engines: {node: '>=4'}
+    dev: true
+
+  /unicode-match-property-ecmascript@1.0.4:
+    resolution: {integrity: sha512-L4Qoh15vTfntsn4P1zqnHulG0LdXgjSO035fEpdtp6YxXhMT51Q6vgM5lYdG/5X3MjS+k/Y9Xw4SFCY9IkR0rg==}
+    engines: {node: '>=4'}
+    dependencies:
+      unicode-canonical-property-names-ecmascript: 1.0.4
+      unicode-property-aliases-ecmascript: 1.0.4
+    dev: true
+
+  /unicode-match-property-value-ecmascript@1.0.2:
+    resolution: {integrity: sha512-Rx7yODZC1L/T8XKo/2kNzVAQaRE88AaMvI1EF/Xnj3GW2wzN6fop9DDWuFAKUVFH7vozkz26DzP0qyWLKLIVPQ==}
+    engines: {node: '>=4'}
+    dev: true
+
+  /unicode-property-aliases-ecmascript@1.0.4:
+    resolution: {integrity: sha512-2WSLa6OdYd2ng8oqiGIWnJqyFArvhn+5vgx5GTxMbUYjCYKUcuKS62YLFF0R/BDGlB1yzXjQOLtPAfHsgirEpg==}
+    engines: {node: '>=4'}
+    dev: true

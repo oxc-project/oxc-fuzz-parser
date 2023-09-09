@@ -2,6 +2,13 @@
   "name": "oxc-fuzz-parser",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cargo build --release && node main.js ./target/release/fuzzer"
+  },
+  "devDependencies": {
+    "shift-ast": "^7.0.0",
+    "shift-codegen": "^8.1.0",
+    "shift-fuzzer": "^3.0.0",
+    "shift-parser": "^8.0.0",
+    "shift-shrink": "^2.0.0"
   }
 }
