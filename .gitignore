@@ -3,3 +3,6 @@ target
 
 __tmp.js
 _minimizer-best.json
+
+fuzz/artifacts
+fuzz/corpus
