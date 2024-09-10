@@ -18,5 +18,5 @@ test = false
 doctest = false
 
 [dependencies]
-oxc = "0.25.0"
+oxc = "0.27.0"
 libfuzzer-sys = "0.4.7"
