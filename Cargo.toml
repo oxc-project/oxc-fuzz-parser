@@ -6,4 +6,5 @@ publish = false
 
 [dependencies]
 oxc = "0.27.0"
+
 libfuzzer-sys = "0.4.7"

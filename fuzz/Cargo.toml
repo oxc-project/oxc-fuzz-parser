@@ -17,6 +17,13 @@ path = "fuzz_targets/parser.rs"
 test = false
 doctest = false
 
+[[bin]]
+name = "regex"
+path = "fuzz_targets/regex.rs"
+test = false
+doctest = false
+
 [dependencies]
 oxc = "0.27.0"
+oxc_regular_expression = "0.27.0"
 libfuzzer-sys = "0.4.7"
