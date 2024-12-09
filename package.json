@@ -1,5 +1,5 @@
 {
-  "name": "oxc-fuzz-parser",
+  "name": "fuzz-oxc",
   "private": true,
   "scripts": {
     "start": "cargo build --release && node main.js ./target/release/fuzzer"
