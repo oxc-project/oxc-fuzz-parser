@@ -5,6 +5,6 @@ edition = "2021"
 publish = false
 
 [dependencies]
-oxc = { version = "0.39.0", features = ["full"]}
+oxc = { version = "0.41.0", features = ["full"]}
 
 libfuzzer-sys = "0.4.8"
